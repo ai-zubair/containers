@@ -10,6 +10,6 @@ app.use((req, res)=>{
   res.json({code: "hello world"});
 })
 
-app.listen(3000, ()=>{
-  console.log("Server fired at 3000")
+app.listen(4000, ()=>{
+  console.log("Server fired at 4000")
 })
