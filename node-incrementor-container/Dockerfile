@@ -1,9 +1,7 @@
 FROM node:12-alpine
 
-USER node
-
 WORKDIR /src
 
-COPY --chown=node:node . .
+COPY  . .
 
 CMD ["node","index.js"]
