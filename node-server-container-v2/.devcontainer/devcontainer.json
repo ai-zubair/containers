@@ -1,0 +1,14 @@
+{
+  "name": "App Server",
+  "dockerFile": "Dockerfile",
+  "appPort": [4000],
+  "runArgs": ["-u","node"],
+  "settings": {
+    "workbench.colorTheme": "Night Owl",
+    "terminal.integrated.shell.linux": "/bin/bash"
+  },
+  "postCreateCommand": "npm i",
+  "extensions": [
+    "sdras.night-owl"
+  ]
+}
