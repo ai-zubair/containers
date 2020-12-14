@@ -3,7 +3,7 @@ const { MongoClient } = require("mongodb");
 
 const app = express();
 
-const dbURL = process.env.MONGO_URL || "mongo://localhost:27017";
+const dbURL = process.env.MONGO_URL || "mongodb://localhost:27017";
 const dbName = "docker";
 const collecName = "counter";
 
