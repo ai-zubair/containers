@@ -3,9 +3,12 @@ services:
   web:
     build:
       context: .
-      dockerfile: Dockerfile
+      dockerfile: dev.Dockerfile
     ports: 
       - "8080:4000"
+    volumes: 
+      - .:/home/node/code/
+      - /home/node/code/node_modules
     links: 
       - db
     environment: 
